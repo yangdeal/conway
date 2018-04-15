@@ -2,14 +2,14 @@ package org.yangdeal;
 
 import java.util.*;
 //import edu.princeton.cs.introcs.org.yangdeal.StdDraw;
-import org.yangdeal.StdDraw;
 
-public class GameOfLife {
+
+public class GameOfLifeAIO {
     public static void main(String[] args) {
 
         // the size of cells' array
-        final int ROWS_NUM = 500;
-        final int COLS_NUM = 500;
+        final int ROWS_NUM = 200;
+        final int COLS_NUM = 200;
 
         Boolean[][] curGen = new Boolean[ROWS_NUM][COLS_NUM];
 
