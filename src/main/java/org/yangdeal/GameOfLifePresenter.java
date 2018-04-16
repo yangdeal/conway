@@ -21,10 +21,9 @@ public class GameOfLifePresenter {
         }
         this.view = view;
         this.currentGeneration = new boolean[view.getHeight()][view.getWidth()];
-        final Random random = new Random();
         for (int row = 0; row < currentGeneration.length; ++row) {
             for (int col = 0; col < currentGeneration[row].length; ++col) {
-                currentGeneration[row][col] = random.nextBoolean();
+                currentGeneration[row][col] = (new Random().nextInt() % 10 == 0);
             }
         }
     }
